@@ -157,12 +157,6 @@ message = f"You have {days_remaining} days, {weeks_remaining} weeks, and {months
 print(message)
 ```
 
-### Tip Calculator
-
-```c
-
-```
-
 ## Day 3 - Beginner - Control Flow and Logical Operators
 
 ## Day 4 - Beginner - Randomisation and Python Lists
