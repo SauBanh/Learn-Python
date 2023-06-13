@@ -1,5 +1,67 @@
 # Learn Python
 ## Day 1 - Beginner - Working with Variables in Python to Manage Data
+
+1. String:
+
+```c
+    print("Nguyễn Tuấn Anh" + " " + "đẹp trai")
+```
+
+-   output: Nguyễn Tuấn Anh đẹp trai
+
+2. Input function: hiện câu hỏi và cho phép người dùng nhập tên vào
+
+```c
+    input("What's your name?")
+```
+
+-   output: What's your name?(enter your name)
+
+3. Kết hợp cả 2
+
+```c
+    print("Hello " + input("What's your name?"))
+```
+
+-   output: What's your name?(enter your name)
+-   output: Hello (your name)
+
+4. Function len(): in ra size của chuỗi
+
+```c
+    print(len("SauBanh"))
+```
+
+-   output: 7
+
+5. làm cách nào để đặt biến trong python
+
+```c
+    name = input("What's your name?")
+    print(name)
+```
+
+6. Ví dụ 1 bài về switch giá trị a sang b và b sang a
+
+```c
+a = input("a: ")
+b = input("b: ")
+c = a
+a = b
+b = c
+print("a = " + a)
+print("b = " + b)
+```
+
+7. tạo một cái câu hỏi cho người dùng nhập sử dụng các kiên thức đã học ở day 1
+
+```c
+print("Welcome to the Band Name Generator.")
+city = input("What's the name of the city you grew up in?\n")
+pet = input("What's your pet's name?\n")
+print("Your band name could be " + city + " " + pet)
+```
+
 ## Day 2 - Beginner - Understanding Data Types and How to Manipulate Strings
 ## Day 3 - Beginner - Control Flow and Logical Operators
 ## Day 4 - Beginner - Randomisation and Python Lists
