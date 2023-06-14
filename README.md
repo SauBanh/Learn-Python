@@ -116,8 +116,9 @@ print(int(a) + int(b))
 2. Trừ: -
 3. Nhân: \*
 4. Chia: /
-5. Mũ: ** (2 mũ 3: 2**3=8)
-6. Thứ tự ưu tiên sẽ là (), \*_, _, /, +, -.
+5. chia lấy dư: %
+6. Mũ: ** (2 mũ 3: 2**3=8)
+7. Thứ tự ưu tiên sẽ là (), \*_, _, /, +, -.
 
 ### Ví dụ BMI
 
@@ -158,6 +159,73 @@ print(message)
 ```
 
 ## Day 3 - Beginner - Control Flow and Logical Operators
+
+### Conditional (if else)
+
+```c
+height = int(input("height: "))
+
+if height > 170:
+    print("You are taller")
+else:
+    print("You aren't taller")
+```
+
+### Ví dụ nhập 1 số là số chẵn hay là số lẻ
+
+```c
+a = input("Nhập 1 số bất kỳ:  ")
+if int(a)%2 == 0:
+    print("Số chẵn")
+else:
+    print("Số lẻ")
+```
+
+### Tạo một bài toán BMI và hiển thị về tình hình sức khỏe
+
+```c
+weight = float(input("weight: "))
+height = float(input("height: "))
+bmi = round(weight/height ** 2)
+
+if bmi < 18.5:
+    print(f"Your bmi is {bmi}, you are underweight")
+elif bmi < 25:
+    print(f"Your bmi is {bmi}, you have a normal weight")
+elif bmi < 35:
+    print(f"Your bmi is {bmi}, you are obese")
+else:
+    print(f"Your bmi is {bmi}, you are clinically obese.")
+```
+
+### Tạo một bài toán về tính tiền pizza
+
+```c
+print("Welcome to Python Pizza:")
+size = input("What size pizza do you want? S, M, or L  ")
+add_pepperoni = input("Do you want pepperoni? Y or N  ")
+extra_cheese = input("Do you want extra cheese? Y or N  ")
+
+bill = 0
+
+if size == "S":
+    bill += 15
+elif size == "M":
+    bill += 20
+else:
+    bill += 25
+
+if add_pepperoni == "Y":
+    if size == "S":
+        bill += 2
+    else:
+        bill += 3
+
+if extra_cheese == "Y":
+    bill += 1
+
+print(f"Your final bill is ${bill}")
+```
 
 ## Day 4 - Beginner - Randomisation and Python Lists
 
