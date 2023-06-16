@@ -1,5 +1,7 @@
 # Learn Python
 
+-   link tham khảo: https://docs.python.org/3/tutorial/datastructures.html
+
 ## Day 1 - Beginner - Working with Variables in Python to Manage Data
 
 1. String:
@@ -228,6 +230,103 @@ print(f"Your final bill is ${bill}")
 ```
 
 ## Day 4 - Beginner - Randomisation and Python Lists
+
+### Cách import một file trong python
+
+1. Tạo một file mới (vd: file.py) và trong file file.py chứa pi
+
+```c
+pi = 3.14159246
+```
+
+2. tại file cần import gõ import với tên file
+
+```c
+import file
+print(file.pi)
+```
+
+3. output sẽ l hiển thị giá trị của pi
+
+### Thêm hàm random từ thư viện
+
+```c
+import random
+# randint sẽ random số nguyên từ 1 đến 10
+random_integer = random.randint(1, 10)
+print(random_integer)
+# random sẽ random ra số float từ 0.000000 đến 0.9999999...
+random_float = random.random()
+print(random_float)
+# random sẽ random ra số float từ 0.000000 đến 4.9999999...
+random_float = random.random() * 5
+print(random_float)
+```
+
+### Các tạo mảng trong python
+
+```c
+fruits = ["cherry", "Apple", "Pear"]
+```
+
+-   Để thêm một thành phần vào mảng cụ thể sử dụng hàm append() vd:
+
+```c
+fruits = ["cherry", "Apple", "Pear"]
+
+fruits.append("Banana")
+
+print(fruits)
+```
+
+-   để thêm nhiều thành phần vào mảng có thể sử dụng hàm extend() vd:
+
+```c
+fruits = ["Cherry", "Apple", "Pear"]
+
+fruits.extend(["Banana", "Watermelon"])
+
+print(fruits)
+```
+
+### Hàm split() dùng để cách chuỗi thêm vào mảng
+
+```c
+print("Gợi ý món hoa quả ăn hôm nay!")
+str = input("Nhập các hoa quả mà hôm nay bạn muốn ăn tôi sẽ giúp bạn chọn 1 món: \n")
+str_to_array = str.split(",")
+str_length = len(str_to_array)
+index_random = random.randint(0, str_length - 1)
+print(str_to_array[index_random])
+```
+
+### Ví dụ về mảng lồng
+
+```c
+fruits = ["Strawberries", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears"]
+vegetables = ["Spinach", "Kale", "Tomatoes", "Celery", "Potatoes"]
+dirty_dozen = [fruits, vegetables]
+print(dirty_dozen)
+print(dirty_dozen[1][1])
+```
+
+### Đặt bánh kem vào 1 ô bất kỳ
+
+```c
+row1 = ["⬜️","⬜️","⬜️"]
+row2 = ["⬜️","⬜️","⬜️"]
+row3 = ["⬜️","⬜️","⬜️"]
+
+map = [row1, row2, row3]
+print(f"{row1}\n{row2}\n{row3}")
+position = input("Where do you want to put the treasure?")
+
+horizontal = position[0]
+vertical = position[1]
+
+map[int(horizontal) - 1][int(vertical) - 1] = "🎂"
+print(f"{row1}\n{row2}\n{row3}")
+```
 
 ## Day 5 - Beginner - Python Loops
 
