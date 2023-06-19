@@ -1,6 +1,9 @@
 # Learn Python
 
--   link tham khảo: https://docs.python.org/3/tutorial/datastructures.html
+## link tham khảo:
+
+-   https://docs.python.org/3/tutorial/datastructures.html
+-   https://docs.python.org/3/library/functions.html
 
 ## Day 1 - Beginner - Working with Variables in Python to Manage Data
 
@@ -419,6 +422,20 @@ print(total)
 ```
 
 ## Day 6 - Beginner - Python Functions & Karel
+
+### Hàm trong python
+
+```c
+def my_function():
+    print("my_function")
+my_function()
+```
+
+```c
+def my_function(n):
+    print(f"my_function {n}")
+my_function("123")
+```
 
 ## Day 7 - Beginner - Hangman
 
