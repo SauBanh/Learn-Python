@@ -330,6 +330,94 @@ print(f"{row1}\n{row2}\n{row3}")
 
 ## Day 5 - Beginner - Python Loops
 
+### Vòng lặp trong python
+
+```c
+fruits = ["Apple", "Peach", "Pear"]
+for fruit in fruits:
+    print(fruit)
+```
+
+### Hàm range - Python (hàm này cho phép trả về một chuỗi số bắt đầu từ 0 và tăng dần lên 1 cho đến khi đạt được một số cụ thể)
+
+```c
+student_heights = input("Input a list of students heights").split()
+for n in range(0, len(student_heights)):
+    student_heights[n] = int(student_heights[n])
+print(student_heights)
+```
+
+-   hàm trên sau khi nhập các giá trị và cách nhau bằng khảng cách thì sẽ tạo ra một mảng vơi các giá trị nhập vừa rồi
+-   input: 5 4 6 4 5 5 5 .Thì output sẽ là: [5, 4, 6, 4, 5, 5, 5]
+
+#### Tính chiều cao trung bình ( không sử dụng các hàm sum len chỉ được sử dụng vòng lặp for)
+
+```c
+student_heights = input("Input a list of students heights: ").split()
+for n in range(0, len(student_heights)):
+    student_heights[n] = int(student_heights[n])
+print(student_heights)
+
+total_height = 0
+for height in student_heights:
+    total_height += height
+print(total_height)
+
+number_of_students = 0
+for student in student_heights:
+    number_of_students += 1
+print(number_of_students)
+
+average_height = round(total_height / number_of_students)
+print(average_height)
+```
+
+#### Hiển thị ra số bé nhất trong và số lớn nhất trong mảng và không sử dụng min max chỉ được sử dụng vòng lặp for
+
+```c
+student_scores = input("Input a list of students scores: ").split()
+for n in range(0, len(student_scores)):
+    student_scores[n] = int(student_scores[n])
+print(student_scores)
+
+min_score = 1
+max_score = 0
+for score in student_scores:
+    if score < min_score:
+        min_score = score
+    if score > max_score:
+        max_score = score
+print(min_score)
+print(max_score)
+```
+
+### Tìm hiểu vòng lặp với range
+
+```c
+# For Loop with Range
+for number in range(1,11,3):
+    print(number)
+total = 0
+for number in range(1,101):
+    total += number
+print(total)
+```
+
+-   Tính tông các số lẻ từ 1 đến 100
+
+```c
+total = 0
+for number in range(2,101,2):
+    total += number
+print(total)
+# hoặc
+total = 0
+for number in range(1,101):
+    if number % 2 == 0:
+        total += number
+print(total)
+```
+
 ## Day 6 - Beginner - Python Functions & Karel
 
 ## Day 7 - Beginner - Hangman
